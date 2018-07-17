@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>title</title>
+    <link rel="stylesheet" href="css/jquery.idcode.css" />
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="js/jquery.idcode.js"></script>
+
+    <link rel="stylesheet" href="css/notice_iframe_one.css">
+</head>
+<body>
+    
+       
+    <div id="all">
+        
+
+        <div class="con">
+            <div class="contitle">
+                <p>欢迎你对本站提供的宝贵建议，标<span>*</span>为必填</p>
+            </div>
+
+            <div class="content">
+                    <form action="">
+                        
+                            <div class="name"><label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label><input type="text"><span>*</span></div>
+                            <div class="phone"><label>联系电话</label><input type="text"></div>
+                            <div class="email"><label>联系邮箱</label><input type="text"></div>
+                            <div class="message"><label>留言内容</label><input type="text"><span>*</span></div>
+                            
+                    </form>
+                    <div class="idetify">
+                            <label class="lblVerification">验证码</label>
+                            <input type="text" id="Txtidcode" class="txtVerification" />
+                            <span id="idcode"></span>
+                            
+                            
+                            <div>
+                                <button type="button" id="btns">立即提交<tton>
+                            </div>
+                    
+                            <script>
+                                $.idcode.setCode();
+                                
+                                $("#btns").click(function (){
+                                    var IsBy = $.idcode.validateCode(); 
+                                    alert(IsBy);
+                                    console.log(IsBy);
+                                });
+                            </script>
+                        </div>
+    
+                       
+    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

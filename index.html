@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="cn-zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="js/lunbo.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+    <script type="text/javascript">
+    var images=new Array("image/05.jpg","image/b6.jpg","image/b7.jpg","image/b8.jpg");
+    var myImg;
+    var index=0;
+    window.onload=function(){
+        myImg=document.getElementById("myImg");
+        var next2=document.getElementById("next2");
+        var pre2=document.getElementById("pre2");
+        pre2.onclick=pre;
+        next2.onclick=next;
+    }
+    function pre(){
+        index=(index-1+images.length)%images.length;
+        myImg.src=images[index];
+    }
+    function next(){
+        index=(index+1)%images.length;
+        myImg.src=images[index];
+    }
+    </script>
+</head>
+<body>
+    <!--第一栏-->
+    <div class="search">
+        <div class="searchOpt">
+            <div class="logo">
+               <h1>北斗融资</h1>
+            </div>
+            <p>专业的服务平台</p>
+            <div class="search_p">
+                 <p></p> 
+                 <span>咨询热线 <i>0000-12345678</i></span>  
+            </div>
+        </div>
+    </div>
+<!--导航栏-->   
+<div style="clear: both;"></div>
+    <div class="nav">        
+            <div class="nav1">
+        
+            </div>
+            <div class="nav2">
+                
+            </div>
+            <div class="nav_content">
+                <ul>
+                    <li class="current" style="width: 90px; border-bottom: 2px solid #fff;"><a href="index.html">首页</a></li>
+                    <li><a href="aboutus.html">关于我们</a></li>
+                    <li><a href="pro_intro.html">租赁产品</a></li>
+                    <li><a href="detail.html">新闻中心</a></li>
+                    <li><a href="partners.html">合作伙伴</a></li>
+                    <li><a href="recruit.html">招纳贤士</a></li>
+                    <li><a href="notice.html">在线留言</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <div class="block"></div>
+                </ul>
+                <div class="nav_search">
+                    <div class="nav_p"></div>
+                </div>
+            </div>
+    </div>
+   
+   <!-- banner部分-->
+   <div style="clear: both;"></div>
+
+   <div class="Banner">
+
+       <div class="index_banner" id="b06">
+            <ul>
+                <li><img class="sliderimg" src="image/ba1.jpg" alt="" width="100%" height="520px;" ></li>
+                <li><img class="sliderimg" src="image/ba10.jpg" alt="" width="100% "height="676px;" ></li>
+                <li><img class="sliderimg" src="image/q6.jpg" alt="" width="100%"></li>
+                <li><img class="sliderimg" src="image/q7.jpg" alt="" width="100%" ></li>
+                <!-- <li><img class="sliderimg" src="image/ba5.jpg" alt="" width="100%" height="520px;"></li> -->
+            </ul>
+            <a href="javascript:void(0);" class="unslider-arrow06 prev"><img class="arrow" id="al" src="image/arrowl.png" alt="prev" width="20" height="35"></a>
+            <a href="javascript:void(0);" class="unslider-arrow06 next"><img class="arrow" id="ar" src="image/arrowr.png" alt="next" width="20" height="37"></a>
+        
+       </div>
+       <script>
+        function imgReload()
+        {
+            var imgHeight = 0;
+            var wtmp = $("body").width();
+            $("#b06 ul li").each(function(){
+                $(this).css({width:wtmp + "px"});
+            });
+            $(".sliderimg").each(function(){
+                $(this).css({width:wtmp + "px"});
+                imgHeight = $(this).height();
+            });
+        }
+        $(window).resize(function(){imgReload();});
+        $(document).ready(function(e) {
+            imgReload();
+            var unslider06 = $('#b06').unslider({
+                dots: true,
+                fluid: true
+            });
+            data06 = unslider06.data('unslider');
+            $('.unslider-arrow06').click(function() {
+                var fn = this.className.split(' ')[1];
+                data06[fn]();
+            });
+        });
+        </script>
+
+       <div class="index_banner_content">
+            <div class="content_box">
+                <div class="content_title">
+                     <h2>走进企业</h2>
+                <span>About us</span>
+                <a href="#">+更多</a>
+                </div>
+               
+                <div style="clear: both;"></div>
+                <img src="image/p1.png" alt="">
+                <p>成立于2014年8月，业务包含融资租赁业务、租赁业务、
+                    租赁资产的残渣处理及维修及租赁交易咨询和担保等业务...</p>
+            </div>
+
+            <div class="content_box">
+                    <div class="content_title">
+                    <h2>新闻中心</h2>
+                    <span>News</span>
+                    <a href="#">+更多</a>
+                    <div style="clear: both;"></div>
+                    </div>
+                    <div class="photo_top1">
+                            <img src="image/06.jpg" alt="" >
+                            <div class="photo_top">
+                        市领导参加我司关于融资发展会议</div>
+                    </div>
+                <div class="news_detail">
+                        <ul>
+                                <li><p></p><span>【公司新闻】</span><a href="#">融资租赁“大跃进”资金链承压风险...</a></li>
+                                <li><p></p><span>【行业动态】</span><a href="#"> 打造飞机租赁总部集聚区</a></li>
+                                <li><p></p><span>【行业动态】</span><a href="#"> 企业进行员工培训</a></li>    
+                        </ul>
+                </div>
+                   
+             </div>
+             <div class="content_box" style="border-right: none;">
+                    <div class="content_title">
+                    <h2>经营产品</h2>
+                    <span>Products</span>
+                    <a href="#">+更多</a>
+               </div>
+                    <div style="clear: both;"></div>
+                    <div class="photo_top1">
+                    <img src="image/05.jpg" alt="" id="myImg">
+                    <p id="pre2">◁</p>
+                    <p id="next2">▷</p>
+                    </div>
+                    <h4>融资租赁</h4>
+                    <p>专业满足各类机构置办有形动产所需的中长期融资精细化实施资金的投放和回笼</p>
+             </div>               
+       </div>
+            
+   </div>
+   <!--底部-->
+   <div class="foot">
+
+    
+    <div class="footer">
+        <div class="top">
+            <div class="coo">
+            <canvas id="mycanvas"></canvas>
+            <div class="red_linear"></div>
+            <script type="text/javascript">
+            var canvas=document.getElementById("mycanvas");
+            var c=canvas.getContext('2d');
+            c.beginPath();
+            c.moveTo(0,0);
+            c.lineTo(260,0);
+            c.lineTo(260,32);
+            c.lineTo(270,60);
+            c.lineTo(260,88);
+            c.lineTo(260,128);
+            c.lineTo(0,128);
+            c.lineTo(0,0);
+            c.closePath();
+            c.fillStyle="#cc2222";
+            c.strokeStyle="#cc2222";
+            c.stroke();
+            c.fill();
+            </script>
+            <p>合作机构</p>
+        </div>
+            <div class="bank1"><img src="image/chinaConstruction.png"></div>
+            <div class="bank2"><img src="image/chinBank.png"></div>
+            <div class="bank3"><img src="image/horse.png"></div>
+            <div class="bank4"><img src="image/bc.png"></div>
+            <div class="bank5"><img src="image/dragon.png"></div>
+        </div>
+
+        <div class="middle">
+            <div class="middle_left">
+                <ul>
+                        <h3 ><a href="#">关于我们</a></b></h3>
+                    <li><a href="#">企业简介</a></li>
+                    <li><a href="#">企业文化</a></li>
+                    <li><a href="#">组织架构</a></li>
+                    <li><a href="#">资质荣誉</a></li>
+                </ul>
+                <ul>
+                        <h3 ><a href="#">租赁产品</a></h3>
+                        <li><a href="#">融资租赁</a></li>
+                        <li><a href="#">经营性租赁</a></li>
+                        <li><a href="#">业务领域</a></li>
+                        <li><a href="#">业务流程</a></li>
+                </ul>
+                <ul>
+                        <h3 ><a href="#">新闻中心</a></b></h3>
+                        <li><a href="#">公司新闻</a></li>
+                        <li><a href="#">行业动态</a></li>
+                        <li><a href="#">视频播放</a></li>
+                </ul>
+                <ul>
+                        <h3 ><a href="#">合作伙伴</a></b></h3>
+                        <li><a href="#">合作伙伴</a></li>
+                        <li><a href="#">合作理念</a></li>
+                </ul>
+                <ul>
+                        <h3 ><a href="#">招纳贤士</a></b></h3>
+                        <li><a href="#">在线招聘</a></li>
+                        <li><a href="#">人才战略</a></li>
+                        <li><a href="#">培训理念</a></li>
+                </ul>
+                <ul>
+                        <h3 ><a href="#">在线申请</a></b></h3>
+                        <li><a href="#">在线申请</a></li>
+                </ul>
+                    
+            </div>
+            <div class="middle_right">
+                <ul>
+                    <li><img src="image/phoneB.png"><a href="#">Tel.0000-1234567</a></li>
+                    <li><img src="image/email1.png"><a href="#">E-Mail.abc@163.com</a></li>
+                    <li><img src="image/location2.png"><a href="#" style="margin-left: 5px;">Ad.中国 北京</a></li>
+                    <li id="right_img"><a href="https://im.qq.com"><img src="image/qq.png"></a><a href="http://weixin.qq.com"><img src="image/weixin.png"></a><a href="http://www.sina.com.cn/"><img src="image/sina.png"></a><a href="http://t.qq.com"><img src="image/weblogo.png"></a></li>
+                </ul>
+                <span></span>
+                <p>官方二维码</p>
+            </div>
+            </div>
+    </div>
+
+    
+    <div class="bottom">
+        <div class="bottom_content">
+            <ul>
+                <li><a href="https://www.baidu.com">友情链接：百度</a></li>
+                <li><a href="https://www.sina.com.cn">新浪</a></li>
+                <li><a href="https://www.1688.com/">阿里巴巴</a></li>
+                <li><a href="https://www.163.com">网易</a></li>
+            </ul>
+            <span>Copyright &COPY;李少君 罗兰兰 陈菊</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
