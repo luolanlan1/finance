@@ -1,0 +1,218 @@
+#all{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+html body{
+    margin: 0;
+    padding: 0;
+    
+}
+.content{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.con{
+    /* border: 1px solid #000; */
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+.banner{
+    height: 260px;
+    width: 100%;
+    background: url(../image/w1.jpg);
+}
+.banner p{
+    font-size: 26px;
+    float: left;
+    font-weight: bold;
+    width: 240px;
+    height: 30px;
+    margin-top: 40px;
+}
+.bgcolor{
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    /* border: red 1px solid; */
+    height: 260px;
+    width: 360px;
+    border-radius: 5px 0 100% 0;
+    background: -webkit-radial-gradient(left top, #7e7e7f 4%, #e2e2e2 10%, #eeecec 17%,#fff 60%);
+    
+}
+.main{
+    height: 727px;
+    width: 100%;
+    border:1px solid rgb(187, 182, 182);
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: absolute;
+    top: -10%;
+    background: #fff;
+}
+.left{
+    width: 23.3%;
+    height: 99.3%;
+    position: relative;
+    top: 4px;
+    /* left: -8px; */
+    border-radius: 5px 0px 0px 0px;
+    perspective: 1000px;
+    box-shadow:5px 10px 3px rgb(241, 241, 241) inset;
+    float: left;
+    /* border:1px solid #000;
+    box-sizing: border-box; */
+    border-right:1px solid #dbd9d3 ;
+}
+.tip{
+    z-index: 2;
+    box-shadow:0px 3px 3px #1b4ead;
+    width: 295px;
+    height: 59px;
+    /* border-bottom: 3px solid #153c85; */
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    left: -30px;
+    margin: 0;
+    line-height: 62px;
+    background:url(../image/yellow.png) no-repeat right top, linear-gradient(to top,#194aa5, #0c71b9);
+}
+.tip p{
+    float: left;
+    line-height: 65px;
+}
+.tip p:nth-child(1){
+    padding-left: 115px;
+    color: #03276b;
+    font-size: 15px;
+}
+.tip p:nth-child(2){
+    color: #fff;
+    line-height: 63px;
+    font-size: 18px;
+
+}
+.link{
+    position: absolute;
+    top: 61px;
+    height: 213px;
+    background: #efebe0;
+}
+.link a{
+    display: block;
+    width: 265px;
+    height: 59px;
+    background: #efebe0;
+    color: #414040;
+    text-decoration: none;
+    text-align: right;
+    line-height: 62px;
+    border-bottom: 2px groove #fefbf4;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.link a:hover{
+    background: #d3cfc4;
+    color: #000;
+}
+/* .link a:nth-child(1){
+
+} */
+.linkp{
+    height: 222px;
+    width: 100%;
+    margin-top: 35px;
+}
+.linkp a{
+    line-height: 18px;
+    display: block;
+    height: 62px;
+    margin: 0px;
+    color: #fff;
+    border: 1px solid #d4a971 ;
+    background:url(../image/contact.jpg) no-repeat,linear-gradient(to bottom, #c69254, #d4a971 90%);
+}
+.linkp p{
+    clear: both;
+    float: left;
+    padding-left: 100px;
+    margin: 0;
+    font-size: 12px;
+}
+.linkp p:nth-child(1){
+    padding-top: 15px;
+    font-size: 16px;
+}
+.linkp a:hover{
+    display: block;
+    height: 62px;
+    margin: 0px;
+    color: #fff;
+    opacity: 0.8;
+    background:url(../image/contact.jpg) no-repeat,linear-gradient(to bottom, #c69254, #d4a971 90%);
+}
+.linkp a:nth-child(2){
+    margin-top: 15px;
+    background:url(../image/money.png) no-repeat,linear-gradient(to bottom, #524634 5%, #b7a181 90%);
+}
+.linkp a:nth-child(3){
+    margin-top: 15px;
+    border: 1px solid #b3b8ad ;
+    background:url(../image/contact2.jpg) no-repeat,linear-gradient(to bottom, #818685 10%, #b3b8ad 90%);
+}
+.right{
+    width: 74%;
+    height: 90%;
+    position: absolute;
+    right: 2.5%;
+    top: 4px;
+    margin: 0;
+}
+
+.top{
+    width: 100%;
+    height: 45px;
+    border-bottom:2px dotted #ccc;
+    position: absolute;
+    top: -12%;
+    
+}
+.toptitle{
+    position: absolute;
+    right: 0;
+    margin-top: 2%;
+}
+.toptitle a{
+    float: left;
+    font-size: 12px;
+    text-decoration: none;
+    color: #7b7b7b;
+    line-height: 20px;
+}
+.toptitle a:hover{
+    color: #0d3465;
+}
+.toptitle a:nth-child(1){
+    text-align: right;
+    width: 90px;
+    background: url(../image/sarrow.png) no-repeat left 1px;
+}
+.toptitle a:nth-child(4){
+    color: #cbcbcb;
+}
+#notice_content{
+    
+    position: absolute;
+    top: 10%;
+    height: 100%;
+}
+/* .footer{
+    height: 42px;
+    border:1px solid #000;
+    box-sizing: border-box;
+} */

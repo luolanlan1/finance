@@ -1,0 +1,101 @@
+#all{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: "微软雅黑";
+}
+.top{
+    width: 100%;
+    height: 51px;
+    border-bottom:2px dotted #ccc;
+}
+.toptitle{
+    position: absolute;
+    right: 0;
+}
+.toptitle p{
+    float: left;
+    font-size: 12px;
+}
+.toptitle p:nth-child(1){
+    text-align: right;
+    width: 90px;
+    background: url(../image/sarrow.png) no-repeat left 1px;
+}
+.toptitle p:nth-child(4){
+    color: #999;
+}
+
+.contitle{
+    width: 100%;
+    height: 65px;
+    margin-top: 21px;text-align:center;
+    padding-top: 15px;
+    background: linear-gradient(to right, #fff 2%, #f1f1f1 98%);
+}
+.contitle h3{
+    margin: 0px;
+    font-size: 18px;
+}
+.contitle p{
+    margin: 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.content{
+    width: 95%;
+    height: 410px;
+    margin-left: 40px;
+    margin-top: 39px;
+    color: #717070;
+    position: relative;
+}
+.content p{
+    line-height: 25px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.linka{
+    width: 210px;
+    height: 30px;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    line-height: 30px;
+    color: #000;
+    font-size: 14px;
+}
+.linka span{
+    display: block;
+    float: left;
+    width: 75px;
+    background: url(../image/add.png) no-repeat left center;
+    text-align: right;
+}
+.linka a{
+    display:block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    padding-top: 3px;
+}
+.footer{
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
+    border:1px solid rgb(187, 187, 187);
+    box-sizing: border-box;
+    background:#f3f3f3;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 40px;
+    position: absolute;
+    right: 0;
+}
+.footer a{
+    color: #114fc2;
+    text-decoration: none;
+}

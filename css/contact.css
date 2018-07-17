@@ -1,0 +1,116 @@
+
+.right_text{
+    position: absolute;
+    font-size: 14px;
+    color: #676767;
+    width: 81%;
+
+    height: 500px;
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 7%;
+    margin-left: 9%;
+    background: url(../image/china.png) no-repeat right;
+
+}
+.right_top {
+    width: 100%;
+    height: 18%;
+    position: relative;
+    border-bottom: 1px solid #999;
+}
+.right_top i{
+    background: url(../image/icon.png);
+    width: 48px;
+    height: 48px;
+    background-position: left 0px;
+    display: inline-block;
+    margin-right: 20px;
+    float:left;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.right_top h3{
+    margin-top: 3%;
+}
+.right_top h4{
+    color: #999;
+    font-size: 12px;
+}
+.right_top span{
+    float: right;
+    color: #245aab;
+    left: 35%;
+    top: 15%;
+    position: absolute;
+    font-size: 30px;
+}
+.right_body{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+.right_body h4{
+    color:#005aab ;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.right_body a{
+    width: 150px;
+    height: 40px;
+    color:#000 ;
+    font-size: 14px;
+    float: left;
+    line-height: 30px;
+    margin-bottom: 10px;
+    
+}
+.right_body a:hover{
+    color: #676767;
+}
+.right_body a i{
+    width: 18px;
+    height: 18px;
+    display: inline-block;  
+    position: absolute;
+    margin-top: 1%;
+    
+    
+}
+.right_body span{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.icon1 i{
+    background: url(../image/icon.png) no-repeat;
+    background-position: left -97px;
+}
+.icon2 i{
+    background: url(../image/icon.png) no-repeat;
+    background-position: left -115px;
+}
+.icon3 i{
+    background: url(../image/icon.png) no-repeat;
+    background-position: left -135px;
+}
+.icon4 i{
+    background: url(../image/icon.png) no-repeat;
+    background-position: left -298px;
+}
+.icon5 i{
+    background: url(../image/icon.png) no-repeat;
+    background-position: left -154px;
+}
+.icon6 i{
+    background: url(../image/icon.png) no-repeat;
+    background-position: left -173px;
+}
+.icon7 i{
+    background: url(../image/icon.png) no-repeat;
+    background-position: left -192px;
+}
+.icon8 i{
+    background: url(../image/icon.png) no-repeat;
+    background-position: left -211px;
+}
